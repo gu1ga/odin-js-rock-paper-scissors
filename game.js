@@ -11,3 +11,13 @@ function getComputerChoice(){
 		return "scissors"
 	}
 }
+
+function getHumanChoice(){
+	let choice = prompt("Choose one: rock | paper | scissors").toLowerCase()
+
+	if (choice == "rock" || choice == "paper" || choice == "scissors"){
+		return choice
+	}else{
+		return "invalid"	
+	}
+}
